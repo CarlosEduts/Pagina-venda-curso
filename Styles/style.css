@@ -1,0 +1,350 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  color: #fff;
+}
+
+html {
+  font-size: 16px;
+}
+
+@media (280px <= width <= 400px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+.buyButton {
+  width: 100%;
+  max-width: 310px;
+  margin-top: 15px;
+  height: 45px;
+  border-radius: 10px;
+  border-right: 2px solid #73a0db;
+  border-bottom: 2px solid #73a0db;
+  background: #3084f2;
+  font-size: 1.2rem;
+  font-weight: 700;
+  transition: all 200ms;
+  animation: buyButtonAnim 2s infinite ease-in-out;
+}
+
+@keyframes buyButtonAnim {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.buyButton:hover {
+  cursor: pointer;
+}
+
+.paragraph {
+  width: 100%;
+  max-width: 300px;
+  margin-top: 50px;
+  font-size: 0.9375rem;
+  font-weight: 300;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.subParagraph {
+  margin-top: 50px;
+  padding: 5px 15px;
+  width: 100%;
+  max-width: 310px;
+  font-size: 0.85rem;
+  font-weight: 300;
+  border-left: 2px solid #3084f2;
+}
+
+.imagesFormat {
+  width: 100%;
+  max-width: 315px;
+  height: 255px;
+  margin-top: 18px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: lightgray 50% / cover no-repeat;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+@media (768px <= width) {
+  .division {
+    display: flex;
+    justify-content: space-around;
+    padding: 5% 5%;
+  }
+}
+
+.justfyCenter {
+  display: flex;
+  justify-content: center;
+}
+
+.navBar {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #121212;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.navBar div {
+  width: 90%;
+  height: 50px;
+  display: flex;
+}
+
+.navBar div div {
+  display: flex;
+  align-items: center;
+}
+
+.navBar div div img {
+  width: 45px;
+  height: 45px;
+  margin-right: 20px;
+}
+
+.navBar div div h1 {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.presentation {
+  width: 100%;
+  height: 100vh;
+  background: #080809;
+}
+
+.presentation .presentationInfo {
+  padding-left: 10%;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+.presentationInfo h1 {
+  margin-bottom: -20px;
+  color: #fff;
+  font-size: 1.625rem;
+  font-weight: 700;
+}
+
+.presentationInfo h1 b {
+  background-color: #3084f2;
+  padding: 0px 3px;
+}
+
+.presentationInfo p {
+  margin-bottom: 30px;
+}
+
+.presentationInfo h2 {
+  font-weight: 400;
+  font-size: 0.875rem;
+  margin-bottom: 10px;
+}
+
+.presentationInfo h2 b {
+  color: #73a0db;
+  font-size: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.presentationDeslize {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  font-weight: 100;
+}
+
+.presentationDeslize p {
+  animation: movimentText 2s infinite ease-in-out;
+}
+
+@keyframes movimentText {
+  0% {
+    margin-bottom: 0px;
+  }
+  50% {
+    margin-bottom: 10px;
+  }
+  100% {
+    margin-bottom: 0px;
+  }
+}
+
+.aboutCourse {
+  width: 100%;
+  padding: 15% 10%;
+  background-color: #121212;
+}
+
+.smallImage {
+  width: 50px;
+  height: 70px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: lightgray 50% / cover no-repeat;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.smallImages {
+  width: 100%;
+  max-width: 315px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: -40px;
+  margin-bottom: 40px;
+}
+
+.reviews {
+  width: 100%;
+  padding: 5% 10%;
+  background: #3084f2;
+  font-size: 0.8rem;
+}
+
+.reviews div div {
+  width: 100%;
+  max-width: 500px;
+  margin-top: 15px;
+  padding: 0px 20px;
+  border-radius: 5px;
+  background: #121212;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+@media (280px <= width <= 400px) {
+  .reviews {
+    padding: 15% 10%;
+  }
+  .reviews div div {
+    max-width: 315px;
+  }
+}
+
+.reviewsText p {
+  animation: reviewsTextAnim 15s infinite alternate;
+}
+
+@keyframes reviewsTextAnim {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.certificateAndWarranty {
+  width: 100%;
+  padding: 15% 10%;
+  background: #080809;
+}
+
+.warranty {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 50px;
+  padding: 50px 40px;
+  text-align: center;
+  background: #121212;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.warranty img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  background: lightgray 50% / cover no-repeat;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.footer {
+  width: 100%;
+  padding: 5% 10%;
+  background: #080809;
+}
+
+.footer div div a {
+  font-size: 0.75rem;
+  font-weight: 200;
+}
+
+.copywriting {
+  margin-top: 70px;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 200;
+}
+
+.copywriting a {
+  color: #73a0db;
+  font-weight: 600;
+}
+
+@media (280px <= width <= 400px) {
+  .footer {
+    padding: 15% 10%;
+  }
+}
+
+.image01 {
+    background-image: url(../Images/Course/lXFA6bhMOau.jpg);
+  }
+  
+  .image02 {
+    background-image: url(../Images/Course/Vl3foqQxwcuzFklL.jpg);
+  }
+  
+  .image03 {
+    background-image: url(../Images/Course/lXFA6bhMOau.jpg);
+  }
+  
+  .image04 {
+    background-image: url(../Images/Course/Image02.jpeg);
+  }
+  
+  .image05 {
+    background-image: url(../Images/Course/Image01.jpeg);
+  }
+  
+  .image06 {
+    background-image: url(../Images/Course/Image03.jpeg);
+  }
+  
