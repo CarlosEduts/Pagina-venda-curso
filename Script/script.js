@@ -48,9 +48,9 @@ const comments = [
 ];
 
 const imgLinks = [
-  `url(../Images/Course/Vl3foqQxwcuzFklL.jpg)`,
-  `url(../Images/Course/lXFA6bhMOau.jpg)`,
-  `url(../Images/Course/Image02.jpeg)`,
+  `url(https://raw.githubusercontent.com/CarlosEduts/Pagina-venda-curso/main/Images/Course/Vl3foqQxwcuzFklL.jpg)`,
+  `url(https://raw.githubusercontent.com/CarlosEduts/Pagina-venda-curso/main/Images/Course/lXFA6bhMOau.jpg)`,
+  `url(https://raw.githubusercontent.com/CarlosEduts/Pagina-venda-curso/main/Images/Course/Image02.jpeg)`,
 ];
 
 const alternateImg01 = () =>
